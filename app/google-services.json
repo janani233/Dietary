@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1011078892175",
+    "firebase_url": "https://dietaryapp-6b1af.firebaseio.com",
+    "project_id": "dietaryapp-6b1af",
+    "storage_bucket": "dietaryapp-6b1af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011078892175:android:f1379e70e58e59d5",
+        "android_client_info": {
+          "package_name": "com.smart.www.dietaryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011078892175-pj0snm35d2jsat8avgiakdea63evtend.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrjQwEFRckyRlhtVRjQK5L-5nAYlz-gYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

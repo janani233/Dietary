@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CreatePatientDietary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/backcolor"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="13dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/navigation_icon_svg"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3.4"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Patient Dietary"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="14dp"
+                android:scaleType="fitXY"
+                android:id="@+id/logout"
+                android:visibility="gone"
+                android:src="@drawable/ic_logout_icon_svg"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Patient Id : eg) 101"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:id="@+id/patient_id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight=".3"
+    android:layout_gravity="center|left"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:text="Patient Details"
+        android:background="@drawable/login_button_bg"
+        android:layout_marginRight="20dp"
+        android:id="@+id/patient_details"
+        android:textColor="@color/white"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/schedule"
+                android:entries="@array/schedule"
+                android:layout_height="match_parent"></Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="match_parent"
+                android:entries="@array/diet_type"
+                android:id="@+id/diet_type"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/canteen_items"
+                android:text="   Canteen items    "
+                android:background="@drawable/login_button_bg"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".8"
+                android:layout_marginRight="20dp"
+                android:layout_height="0dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical">
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:text="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:text="Qty"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:text="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:text="Qty"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:text="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:text="Qty"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:text="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:text="Qty"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:text="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:text="Qty"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3.3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:text="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:text="Qty"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".2"
+                android:layout_marginBottom="10dp"
+                android:layout_height="0dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_button_bg"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

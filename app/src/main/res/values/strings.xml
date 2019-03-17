@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DietaryApp</string>
+    <string name="patient">Patient</string>
+    <string name="dietitian">Dietitian</string>
+
+    <string name="login">Login</string>
+    <string-array name="role">
+        <item>Select Role</item>
+        <item>Dietitian</item>
+        <item>Patient</item>
+    </string-array>
+    <string-array name="schedule">
+        <item>Select Schedule</item>
+        <item>Bed Coffee</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Evening</item>
+        <item>Dinner</item>
+
+    </string-array>
+    <string-array name="diet_type">
+        <item>Select Diet Type</item>
+        <item>Cardiac diet</item>
+        <item>Diabetic diet</item>
+        <item>Normal diet</item>
+        <item>Vegetarian diet</item>
+    </string-array>
+</resources>

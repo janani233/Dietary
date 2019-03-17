@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_hospital" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="PSG Hospital"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/background"
+
+                android:paddingLeft="20dp"
+                android:paddingBottom="13dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingTop="13dp"
+                android:layout_marginRight="40dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/role"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:entries="@array/role"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingTop="13dp"
+                style="@style/EditText.Login"
+                android:layout_marginRight="40dp"
+                android:lines="1"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:id="@+id/login_username"
+                android:paddingBottom="13dp"
+                android:textSize="16sp"
+                android:hint="Username"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/login_password"
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                android:lines="1"
+                style="@style/EditText.Login"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingTop="13dp"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="13dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/login_button_bg"
+                android:id="@+id/login"
+                android:textColor="#ffffff"
+                android:letterSpacing="0.2"
+                android:layout_height="40dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Log in"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
