@@ -1,0 +1,416 @@
+{
+  "Dietitian" : {
+    "Password" : "vedha",
+    "UserName" : "janani"
+  },
+  "Dietitians" : [ {
+    "Id" : 201,
+    "Name" : "Kavi",
+    "Password" : "kavi123",
+    "UserName" : "kavi"
+  }, {
+    "Id" : 202,
+    "Name" : "Madhu",
+    "Password" : "madhu123",
+    "UserName" : "madhu"
+  }, {
+    "Id" : 203,
+    "Name" : "Janani",
+    "Password" : "janani123",
+    "UserName" : "janani"
+  }, {
+    "Id" : 204,
+    "Name" : "Suji",
+    "Password" : "suji123",
+    "UserName" : "suji"
+  } ],
+  "FoodMaster" : [ {
+    "Calories" : 2.3,
+    "Carbohydrates" : 23,
+    "DietType" : "Diabetic, Normal, Vegetarian",
+    "Fat" : 0.2,
+    "FoodCode" : "M031",
+    "FoodName" : "Uthappam",
+    "Protein" : 14,
+    "Quantity" : 45,
+    "Rate" : 30,
+    "Schedule" : "Morning"
+  }, {
+    "Calories" : 3.1,
+    "Carbohydrates" : 25,
+    "DietType" : "Cardiac, Diabetic, Normal, Vegetarian",
+    "Fat" : 0,
+    "FoodCode" : "M032",
+    "FoodName" : "Idly",
+    "Protein" : 28,
+    "Quantity" : 50,
+    "Rate" : 5,
+    "Schedule" : "Morning, Night"
+  }, {
+    "Calories" : 3.2,
+    "Carbohydrates" : 24,
+    "DietType" : "Normal, Vegetarian",
+    "Fat" : 0.5,
+    "FoodCode" : "M033",
+    "FoodName" : "Dosa",
+    "Protein" : 15,
+    "Quantity" : 45,
+    "Rate" : 40,
+    "Schedule" : "Morning, Night"
+  }, {
+    "Calories" : 2.5,
+    "Carbohydrates" : 27,
+    "DietType" : "Diabetic, Normal, Vegetarian, Cardiac",
+    "Fat" : 0.4,
+    "FoodCode" : "M034",
+    "FoodName" : "Poori",
+    "Protein" : 24,
+    "Quantity" : 40,
+    "Rate" : 20,
+    "Schedule" : "Morning"
+  }, {
+    "Calories" : 3,
+    "Carbohydrates" : 24,
+    "DietType" : "Normal, Diabetic, Castrol",
+    "Fat" : 2.4,
+    "FoodCode" : "M035",
+    "FoodName" : "Egg",
+    "Protein" : 7.6,
+    "Quantity" : 50,
+    "Rate" : 10,
+    "Schedule" : "Morning, Afternoon, Night"
+  }, {
+    "Calories" : 3.2,
+    "Carbohydrates" : 25,
+    "DietType" : "Normal, Diabetic",
+    "Fat" : 2.1,
+    "FoodCode" : "M036",
+    "FoodName" : "Fish",
+    "Protein" : 17,
+    "Quantity" : 50,
+    "Rate" : 90,
+    "Schedule" : "Afternoon"
+  }, {
+    "Calories" : 2.5,
+    "Carbohydrates" : 20,
+    "DietType" : " Normal",
+    "Fat" : 0.2,
+    "FoodCode" : "M037",
+    "FoodName" : "Meat",
+    "Protein" : 20,
+    "Quantity" : 45,
+    "Rate" : 70,
+    "Schedule" : "Afternoon"
+  }, {
+    "Calories" : 2.2,
+    "Carbohydrates" : 28,
+    "DietType" : "Diabetic, Cardioc, Normal, Vegetarian",
+    "Fat" : 0.9,
+    "FoodCode" : "M038",
+    "FoodName" : "Meals",
+    "Protein" : 32,
+    "Quantity" : 50,
+    "Rate" : 50,
+    "Schedule" : "Afternoon"
+  }, {
+    "Calories" : 3.2,
+    "Carbohydrates" : 34,
+    "DietType" : "Diabetic, Normal, Vegetarian",
+    "Fat" : 4.0,
+    "FoodCode" : "M039",
+    "FoodName" : "Samosa",
+    "Protein" : 14,
+    "Quantity" : 45,
+    "Rate" : 20,
+    "Schedule" : "Evening"
+  }, {
+    "Calories" : 3.4,
+    "Carbohydrates" : 31,
+    "DietType" : "Diabetic, Normal, Vegetarian, Cardioc",
+    "Fat" : 0.2,
+    "FoodCode" : "M040",
+    "FoodName" : "Tea",
+    "Protein" : 10,
+    "Quantity" : 70,
+    "Rate" : 15,
+    "Schedule" : "Morning, Afternoon, Evening, BedCoffee"
+  }, {
+    "Calories" : 3.2,
+    "Carbohydrates" : 22,
+    "DietType" : " Normal, Vegetarian",
+    "Fat" : 0.2,
+    "FoodCode" : "M041",
+    "FoodName" : "Coffee",
+    "Protein" : 11,
+    "Quantity" : 60,
+    "Rate" : 20,
+    "Schedule" : "Morning, Afternoon,Evening, BedCoffee"
+  }, {
+    "Calories" : 1.4,
+    "Carbohydrates" : 17,
+    "DietType" : "Diabetic, Normal, Vegetarian, Cardioc",
+    "Fat" : 0.5,
+    "FoodCode" : "M042",
+    "FoodName" : "Milk",
+    "Protein" : 14,
+    "Quantity" : 90,
+    "Rate" : 10,
+    "Schedule" : "Morning, Evening, Afternoon, Night, BedCoffee"
+  } ],
+  "Patient" : {
+    "Password" : "Suji",
+    "UserName" : "Kavi"
+  },
+  "Patients" : [ {
+    "DietInfo" : {
+      "Dinner" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no oil",
+        "ItemName" : "Dosa",
+        "Quantity" : 1
+      } ],
+      "Evening" : [ {
+        "Comments" : "no sugar",
+        "ItemName" : "Tea",
+        "Quantity" : 1
+      }, {
+        "Comments" : "no sugar",
+        "ItemName" : "Coffee",
+        "Quantity" : 1
+      } ],
+      "Lunch" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "Meals",
+        "Quantity" : 1
+      }, {
+        "Comments" : "no salt and less oil",
+        "ItemName" : "Fish",
+        "Quantity" : 1
+      } ],
+      "Morning" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 1
+      } ],
+      "Snacks" : [ {
+        "Comments" : "no salt and less spicy",
+        "ItemName" : "Samosa",
+        "Quantity" : 2
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Milk",
+        "Quantity" : 1
+      } ]
+    },
+    "Id" : 101,
+    "Name" : "Dinesh",
+    "Password" : "dinesh123",
+    "RoomNo" : 1001,
+    "UserName" : "dinesh"
+  }, {
+    "DietInfo" : {
+      "Dinner" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 2
+      } ],
+      "Evening" : [ {
+        "Comments" : "no sugar",
+        "ItemName" : "Tea",
+        "Quantity" : 1
+      } ],
+      "Lunch" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "Meat",
+        "Quantity" : 2
+      }, {
+        "ItemName" : "Meals",
+        "Quantity" : 1
+      } ],
+      "Morning" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 2
+      } ],
+      "Snacks" : [ {
+        "ItemName" : "Samosa",
+        "Quantity" : 1
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 3
+      } ]
+    },
+    "Id" : 102,
+    "Name" : "Suren",
+    "Password" : "suren123",
+    "RoomNo" : 1002,
+    "UserName" : "suren"
+  }, {
+    "DietInfo" : {
+      "Dinner" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 3
+      } ],
+      "Evening" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 3
+      } ],
+      "Lunch" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 3
+      } ],
+      "Morning" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 3
+      } ],
+      "Snacks" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 3
+      } ]
+    },
+    "Id" : 103,
+    "Name" : "Thanu",
+    "Password" : "thanu123",
+    "RoomNo" : 1003,
+    "UserName" : "thanu"
+  }, {
+    "DietInfo" : {
+      "Dinner" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 2
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 1
+      } ],
+      "Evening" : [ {
+        "Comments" : "no sugar",
+        "ItemName" : "Tea",
+        "Quantity" : 1
+      }, {
+        "Comments" : "no sugar",
+        "ItemName" : "Milk",
+        "Quantity" : 1
+      } ],
+      "Lunch" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "Meals",
+        "Quantity" : 1
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Egg",
+        "Quantity" : 1
+      } ],
+      "Morning" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "Comments" : "no salt",
+        "ItemName" : "Dosa",
+        "Quantity" : 2
+      } ],
+      "Snacks" : [ {
+        "Comments" : "no salt",
+        "ItemName" : "Samosa",
+        "Quantity" : 3
+      } ]
+    },
+    "Id" : 104,
+    "Name" : "Janani",
+    "Password" : "janani123",
+    "RoomNo" : 1004,
+    "UserName" : "janani"
+  }, {
+    "DietInfo" : {
+      "Dinner" : [ {
+        "ItemName" : "idli",
+        "Quantity" : 3
+      }, {
+        "ItemName" : "Dosa",
+        "Quantity" : 2
+      } ],
+      "Evening" : [ {
+        "ItemName" : "Tea",
+        "Quantity" : 1
+      }, {
+        "ItemName" : "Coffee",
+        "Quantity" : 1
+      } ],
+      "Lunch" : [ {
+        "ItemName" : "Fish",
+        "Quantity" : 2
+      }, {
+        "ItemName" : "Meat",
+        "Quantity" : 1
+      }, {
+        "ItemName" : "Egg",
+        "Quantity" : 2
+      }, {
+        "ItemName" : "Meals",
+        "Quantity" : 1
+      } ],
+      "Morning" : [ {
+        "ItemName" : "Uthappam",
+        "Quantity" : 2
+      }, {
+        "ItemName" : "Dosa",
+        "Quantity" : 2
+      } ],
+      "Snacks" : [ {
+        "ItemName" : "Samosa",
+        "Quantity" : 2
+      }, {
+        "ItemName" : "Tea",
+        "Quantity" : 1
+      } ]
+    },
+    "Id" : 105,
+    "Name" : "Ponmani",
+    "Password" : "ponmani123",
+    "RoomNo" : 1005,
+    "UserName" : "ponmani"
+  } ]
+}
