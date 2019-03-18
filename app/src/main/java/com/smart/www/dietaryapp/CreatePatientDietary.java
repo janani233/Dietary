@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -51,15 +52,22 @@ public class CreatePatientDietary extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                myRef = database.getReference("Patients");
 
-                Integer patientId = Integer.parseInt(patient_id.getText().toString());
+                String patientId = patient_id.getText().toString();
                 String  Schedule = getResources().getStringArray(R.array.schedule)[schecdule.getSelectedItemPosition()];
                 String  dietType = getResources().getStringArray(R.array.diet_type)[diet_type.getSelectedItemPosition()];
 
-                //  Toast.makeText(getApplicationContext(),""+patientId +Schedule +dietType,Toast.LENGTH_SHORT).show();
-                CanteenAction(patientId,Schedule,dietType);
 
+                if (TextUtils.isEmpty(patientId.toString()))
+                    patient_id.setError("* Enter the patient Id");
+
+                if(!patientId.isEmpty()) {
+                    Integer pId = Integer.parseInt(patientId);
+
+                    myRef = database.getReference("Patients");
+                    //  Toast.makeText(getApplicationContext(),""+patientId +Schedule +dietType,Toast.LENGTH_SHORT).show();
+                    CanteenAction(pId, Schedule, dietType);
+                }
             }
         });
     }
@@ -97,7 +105,6 @@ for(int i=0;i<dataSnapshot.getChildrenCount();i++){
 
                 final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.custom_dialog);
-                dialog.setTitle("Title...");
 
                 // set the custom dialog components - text, image and button
                 TextView text = (TextView) dialog.findViewById(R.id.text);

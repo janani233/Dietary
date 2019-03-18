@@ -239,7 +239,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="4.3"
+                                                    android:text="4"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -253,7 +253,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="0.3"
+                                                    android:text="0"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -268,16 +268,17 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="3.3"
+                                                    android:text="3"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                         </LinearLayout>
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content">
-                                            <TextView
+                                            <EditText
                                                 android:layout_width="match_parent"
-                                                android:text="Comment"
+
+                                                android:hint="Comment"
                                                 android:layout_height="match_parent" />
                                         </LinearLayout>
                                     </LinearLayout>
@@ -295,7 +296,134 @@
                                             android:layout_width="match_parent"
                                             android:layout_marginRight="10dp"
                                             android:paddingLeft="10dp"
-                                            android:text="Qty"
+                                            android:hint="Qty"
+                                            android:inputType="number"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <EditText
+                                                android:layout_width="match_parent"
+
+                                                android:hint="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:hint="Qty"
+                                            android:inputType="number"
                                             android:layout_marginLeft="10dp"
                                             android:layout_height="match_parent" />
                                     </LinearLayout>
@@ -362,7 +490,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="4.3"
+                                                    android:text="4"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -376,7 +504,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="0.3"
+                                                    android:text="0"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -391,16 +519,17 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="3.3"
+                                                    android:text="3"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                         </LinearLayout>
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content">
-                                            <TextView
+                                            <EditText
                                                 android:layout_width="match_parent"
-                                                android:text="Comment"
+
+                                                android:hint="Comment"
                                                 android:layout_height="match_parent" />
                                         </LinearLayout>
                                     </LinearLayout>
@@ -418,7 +547,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_marginRight="10dp"
                                             android:paddingLeft="10dp"
-                                            android:text="Qty"
+                                            android:hint="Qty"
+                                            android:inputType="number"
                                             android:layout_marginLeft="10dp"
                                             android:layout_height="match_parent" />
                                     </LinearLayout>
@@ -485,7 +615,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="4.3"
+                                                    android:text="4"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -499,7 +629,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="0.3"
+                                                    android:text="0"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -514,16 +644,17 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="3.3"
+                                                    android:text="3"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                         </LinearLayout>
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content">
-                                            <TextView
+                                            <EditText
                                                 android:layout_width="match_parent"
-                                                android:text="Comment"
+
+                                                android:hint="Comment"
                                                 android:layout_height="match_parent" />
                                         </LinearLayout>
                                     </LinearLayout>
@@ -541,7 +672,132 @@
                                             android:layout_width="match_parent"
                                             android:layout_marginRight="10dp"
                                             android:paddingLeft="10dp"
-                                            android:text="Qty"
+                                            android:hint="Qty"
+                                            android:inputType="number"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_height="match_parent" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight=".1"
+                                        android:layout_height="match_parent">
+                                        <CheckBox
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="match_parent" />
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".7"
+                                        android:orientation="vertical"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_width="match_parent"
+                                            android:text="Food Name"
+                                            android:layout_height="match_parent" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:weightSum="3"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="Protein : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="4"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1.2"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Calories : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="0"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight=".8"
+                                                android:orientation="horizontal"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:text="| Fat : "
+                                                    android:layout_height="match_parent" />
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:text="3"
+                                                    android:layout_height="match_parent" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <EditText
+                                                android:layout_width="match_parent"
+
+                                                android:hint="Comment"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".2"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="1dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:background="#9e9e9e"
+                                            android:layout_height="match_parent" />
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_marginRight="10dp"
+                                            android:paddingLeft="10dp"
+                                            android:hint="Qty"
+                                            android:inputType="number"
                                             android:layout_marginLeft="10dp"
                                             android:layout_height="match_parent" />
                                     </LinearLayout>
@@ -608,7 +864,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="4.3"
+                                                    android:text="4"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -622,7 +878,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="0.3"
+                                                    android:text="0"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -637,16 +893,17 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="3.3"
+                                                    android:text="3"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                         </LinearLayout>
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content">
-                                            <TextView
+                                            <EditText
                                                 android:layout_width="match_parent"
-                                                android:text="Comment"
+
+                                                android:hint="Comment"
                                                 android:layout_height="match_parent" />
                                         </LinearLayout>
                                     </LinearLayout>
@@ -664,7 +921,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_marginRight="10dp"
                                             android:paddingLeft="10dp"
-                                            android:text="Qty"
+                                            android:hint="Qty"
+                                            android:inputType="number"
                                             android:layout_marginLeft="10dp"
                                             android:layout_height="match_parent" />
                                     </LinearLayout>
@@ -731,7 +989,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="4.3"
+                                                    android:text="4"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -745,7 +1003,7 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="0.3"
+                                                    android:text="0"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                             <LinearLayout
@@ -760,16 +1018,17 @@
                                                     android:layout_height="match_parent" />
                                                 <TextView
                                                     android:layout_width="match_parent"
-                                                    android:text="3.3"
+                                                    android:text="3"
                                                     android:layout_height="match_parent" />
                                             </LinearLayout>
                                         </LinearLayout>
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content">
-                                            <TextView
+                                            <EditText
                                                 android:layout_width="match_parent"
-                                                android:text="Comment"
+
+                                                android:hint="Comment"
                                                 android:layout_height="match_parent" />
                                         </LinearLayout>
                                     </LinearLayout>
@@ -787,7 +1046,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_marginRight="10dp"
                                             android:paddingLeft="10dp"
-                                            android:text="Qty"
+                                            android:hint="Qty"
+                                            android:inputType="number"
                                             android:layout_marginLeft="10dp"
                                             android:layout_height="match_parent" />
                                     </LinearLayout>
@@ -796,128 +1056,6 @@
 
                             </android.support.v7.widget.CardView>
 
-                            <android.support.v7.widget.CardView
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:clickable="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_margin="10dp">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:orientation="horizontal"
-
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content">
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:orientation="vertical"
-                                        android:layout_weight=".1"
-                                        android:layout_height="match_parent">
-                                        <CheckBox
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent" />
-
-                                    </LinearLayout>
-
-                                    <TextView
-                                        android:layout_width="1dp"
-                                        android:layout_marginTop="5dp"
-                                        android:layout_marginBottom="5dp"
-                                        android:background="#9e9e9e"
-                                        android:layout_marginRight="5dp"
-                                        android:layout_height="match_parent" />
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".7"
-                                        android:orientation="vertical"
-                                        android:layout_height="wrap_content">
-
-                                        <TextView
-                                            android:layout_marginTop="5dp"
-                                            android:layout_width="match_parent"
-                                            android:text="Food Name"
-                                            android:layout_height="match_parent" />
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:orientation="horizontal"
-                                            android:weightSum="3"
-                                            android:layout_height="match_parent">
-                                            <LinearLayout
-                                                android:layout_width="0dp"
-                                                android:layout_weight="1"
-                                                android:orientation="horizontal"
-                                                android:layout_height="match_parent">
-                                                <TextView
-                                                    android:layout_width="wrap_content"
-                                                    android:text="Protein : "
-                                                    android:layout_height="match_parent" />
-                                                <TextView
-                                                    android:layout_width="match_parent"
-                                                    android:text="4.3"
-                                                    android:layout_height="match_parent" />
-                                            </LinearLayout>
-                                            <LinearLayout
-                                                android:layout_width="0dp"
-                                                android:layout_weight="1.2"
-                                                android:orientation="horizontal"
-                                                android:layout_height="match_parent">
-                                                <TextView
-                                                    android:layout_width="wrap_content"
-                                                    android:text="| Calories : "
-                                                    android:layout_height="match_parent" />
-                                                <TextView
-                                                    android:layout_width="match_parent"
-                                                    android:text="0.3"
-                                                    android:layout_height="match_parent" />
-                                            </LinearLayout>
-                                            <LinearLayout
-                                                android:layout_width="0dp"
-                                                android:layout_weight=".8"
-                                                android:orientation="horizontal"
-                                                android:layout_height="match_parent">
-
-                                                <TextView
-                                                    android:layout_width="wrap_content"
-                                                    android:text="| Fat : "
-                                                    android:layout_height="match_parent" />
-                                                <TextView
-                                                    android:layout_width="match_parent"
-                                                    android:text="3.3"
-                                                    android:layout_height="match_parent" />
-                                            </LinearLayout>
-                                        </LinearLayout>
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content">
-                                            <TextView
-                                                android:layout_width="match_parent"
-                                                android:text="Comment"
-                                                android:layout_height="match_parent" />
-                                        </LinearLayout>
-                                    </LinearLayout>
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".2"
-                                        android:layout_height="match_parent">
-                                        <TextView
-                                            android:layout_width="1dp"
-                                            android:layout_marginTop="5dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:background="#9e9e9e"
-                                            android:layout_height="match_parent" />
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_marginRight="10dp"
-                                            android:paddingLeft="10dp"
-                                            android:text="Qty"
-                                            android:layout_marginLeft="10dp"
-                                            android:layout_height="match_parent" />
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                            </android.support.v7.widget.CardView>
 
                         </LinearLayout>
                     </ScrollView>
